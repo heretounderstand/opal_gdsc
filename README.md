@@ -1,4 +1,4 @@
-# Opale-GDSC Solution Challenge
+# Opale-GDSC Solution Challenge 2023
 
 Works on Android & iOS!
 
@@ -20,8 +20,18 @@ Works on Android & iOS!
 ## Installation
 
 - Create Firebase Project
-- Enable Authentication (Google Sign In, Guest Sign In)
+- Enable Authentication (Google Sign In)
+- Make Storage Rules
+-for each goal from the page [UN-goals](https://developers.google.com/community/gdsc-solution-challenge/UN-goals), copy the goal's logo and add it to the Firebase Storage
+
 - Create a Firestore Database
+- Make Firestore Rules
+
+- Start a collection named "unProjects" and for each projects from the page [UN-goals](https://developers.google.com/community/gdsc-solution-challenge/UN-goals) create a doc with the following fields:
+- - id: the id of the doc (string)
+- - name: the name of the project (string)
+- - link: the link of the project (string)
+
 - Start a collection named "unGoals" and for each goal from the page [UN-goals](https://developers.google.com/community/gdsc-solution-challenge/UN-goals) create a doc with the following fields:
 - - id: the id of the doc (string)
 - - rank: the rank of the goal (example: 1 for No Poverty) (number)
@@ -33,3 +43,15 @@ Works on Android & iOS!
 - - targets: the address of the link with the text "Why it matters" (string)
 - - targets: the address of the link with the text "The United Nations targets for this goal" (string)
 - - projects: the id of each istance in the collection unProjects listed below "EXAMPLE PROJECTS:" (array)
+
+- Create Android & iOS Apps
+- Use FlutterFire CLI to add the Firebase Project to this app.
+
+## Tech Used
+**Server**: Firebase Auth, Firebase Storage, Firebase Firestore
+
+**Client**: Flutter, Google Maps
+    
+## Feedback
+
+If you have any feedback, please reach out to me at kadrilud@gmail.com

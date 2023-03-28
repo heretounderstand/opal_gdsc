@@ -22,4 +22,14 @@ Works on Android & iOS!
 - Create Firebase Project
 - Enable Authentication (Google Sign In, Guest Sign In)
 - Create a Firestore Database
-- Start a collection named "unGoals" and
+- Start a collection named "unGoals" and for each goal from the page [UN-goals](https://developers.google.com/community/gdsc-solution-challenge/UN-goals) create a doc with the following fields:
+- - id: the id of the doc (string)
+- - rank: the rank of the goal (example: 1 for No Poverty) (number)
+- - color: the hexadecimal code of the goal's color (example: 4294810916 for No Poverty) (number)
+- - description: the description below the name of the goal (example: "End poverty in all its forms, everywhere." for No Poverty) (string)
+- - info: the address of the link with the text "Infographic" (string)
+- - logo: the link of the goal's logo in the Storage (string)
+- - name: the name of the goal (string)
+- - targets: the address of the link with the text "Why it matters" (string)
+- - targets: the address of the link with the text "The United Nations targets for this goal" (string)
+- - projects: the id of each istance in the collection unProjects listed below "EXAMPLE PROJECTS:" (array)
